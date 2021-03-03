@@ -296,6 +296,12 @@
             }
         }
         
+        @media (min-width: $tablet) and(max-width: $desktop) {
+            .footer-centrion {
+                justify-content: center;
+            }
+        }
+        
         @media (min-width: $desktop) {
             .footer {
                 text-align: left;

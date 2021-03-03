@@ -139,6 +139,9 @@
     .team-grid__item {
         width: 353px;
     }
+    .work-grid__item {
+        text-align: start;
+    }
     .team-photo--mobile {
         display: none;
     }
@@ -151,8 +154,14 @@
 }
 
 @media (min-width: $desktop) {
+    .hero {
+        height: 600px;
+    }
     .hero__title {
         width: 696px;
+    }
+    .super {
+        margin-bottom: 50px;
     }
     .work,
     .team,

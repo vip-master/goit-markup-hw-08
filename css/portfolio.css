@@ -367,9 +367,9 @@ address {
   }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .centrion {
-    max-width: 767px;
+    max-width: 768px;
   }
 }
 
@@ -384,7 +384,7 @@ address {
   max-height: 100%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .header {
     padding-bottom: 10px;
   }
@@ -483,7 +483,7 @@ address {
   }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .modal-nav__social {
     display: none;
   }
@@ -543,7 +543,7 @@ address {
   }
 }
 
-@media (min-width: 767px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .contact__link:first-child {
     margin-bottom: 10px;
   }
@@ -660,7 +660,7 @@ address {
   right: 28px;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .footer-centrion {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -673,6 +673,14 @@ address {
   }
   .spam__input {
     max-width: 450px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .footer-centrion {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -783,7 +791,7 @@ h6 {
   border-radius: 2px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .nav__link {
     font-size: 40px;
     line-height: 47px;
@@ -800,7 +808,7 @@ h6 {
   line-height: 1.17647059;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .contact__link:last-child {
     color: var(--color-accent);
   }
@@ -815,7 +823,7 @@ h6 {
   }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .contact__link:first-child {
     font-size: 12px;
   }
@@ -1045,6 +1053,18 @@ button:active {
   height: 100%;
 }
 
+.photo--mobile {
+  display: block;
+}
+
+.photo--tablet {
+  display: none;
+}
+
+.photo--desktop {
+  display: none;
+}
+
 .card__textcard {
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -1056,7 +1076,7 @@ button:active {
   margin-top: 4px;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .filter {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1073,11 +1093,23 @@ button:active {
   .cards__item {
     width: 354px;
   }
+  .photo--mobile {
+    display: none;
+  }
+  .photo--tablet {
+    display: block;
+  }
 }
 
 @media (min-width: 1200px) {
   .cards__item {
     width: 370px;
+  }
+  .photo--tablet {
+    display: none;
+  }
+  .photo--desktop {
+    display: block;
   }
 }
 

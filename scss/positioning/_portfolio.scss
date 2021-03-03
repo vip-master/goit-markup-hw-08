@@ -34,6 +34,18 @@
     height: 100%;
 }
 
+.photo--mobile {
+    display: block;
+}
+
+.photo--tablet {
+    display: none;
+}
+
+.photo--desktop {
+    display: none;
+}
+
 .card__textcard {
     align-items: flex-start;
     padding: 20px 24px 20px 24px;
@@ -55,10 +67,22 @@
     .cards__item {
         width: 354px;
     }
+    .photo--mobile {
+        display: none;
+    }
+    .photo--tablet {
+        display: block;
+    }
 }
 
 @media(min-width: $desktop) {
     .cards__item {
         width: 370px;
+    }
+    .photo--tablet {
+        display: none;
+    }
+    .photo--desktop {
+        display: block;
     }
 }

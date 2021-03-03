@@ -367,9 +367,9 @@ address {
   }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .centrion {
-    max-width: 767px;
+    max-width: 768px;
   }
 }
 
@@ -384,7 +384,7 @@ address {
   max-height: 100%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .header {
     padding-bottom: 10px;
   }
@@ -483,7 +483,7 @@ address {
   }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .modal-nav__social {
     display: none;
   }
@@ -543,7 +543,7 @@ address {
   }
 }
 
-@media (min-width: 767px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .contact__link:first-child {
     margin-bottom: 10px;
   }
@@ -660,7 +660,7 @@ address {
   right: 28px;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .footer-centrion {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -673,6 +673,14 @@ address {
   }
   .spam__input {
     max-width: 450px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .footer-centrion {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -783,7 +791,7 @@ h6 {
   border-radius: 2px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .nav__link {
     font-size: 40px;
     line-height: 47px;
@@ -800,7 +808,7 @@ h6 {
   line-height: 1.17647059;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .contact__link:last-child {
     color: var(--color-accent);
   }
@@ -815,7 +823,7 @@ h6 {
   }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .contact__link:first-child {
     font-size: 12px;
   }
@@ -1064,7 +1072,7 @@ button:active {
   margin: 0 auto;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .work,
   .work-grid__item {
     padding: 30px 0 30px 0;
@@ -1093,7 +1101,7 @@ button:active {
   width: 100%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .team-grid__item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -1157,7 +1165,7 @@ button:active {
   padding: 20px 0 20px 0;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .work,
   .team,
   .clients {
@@ -1176,6 +1184,9 @@ button:active {
   .team-grid__item {
     width: 353px;
   }
+  .work-grid__item {
+    text-align: start;
+  }
   .team-photo--mobile {
     display: none;
   }
@@ -1188,8 +1199,14 @@ button:active {
 }
 
 @media (min-width: 1200px) {
+  .hero {
+    height: 600px;
+  }
   .hero__title {
     width: 696px;
+  }
+  .super {
+    margin-bottom: 50px;
   }
   .work,
   .team,
@@ -1264,7 +1281,7 @@ button:active {
   }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .window {
     top: 208px;
   }
@@ -1468,13 +1485,13 @@ button:active {
   color: var(--color-logos);
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .hero {
     background-image: url("../images/tablet/studio/heroback.png");
   }
 }
 
-@media screen and (min-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 767px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image: url("../images/tablet/studio/2x/heroback.png");
   }
