@@ -1,3 +1,3 @@
-# goit-markup-hw-06
+# goit-markup-hw-08
 
-https://vip-master.github.io/goit-markup-hw-06/
+https://vip-master.github.io/goit-markup-hw-08/
