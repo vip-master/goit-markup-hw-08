@@ -1,0 +1,240 @@
+        /* 
+    Font Styles:
+    Roboto 900;
+*/
+        
+        .hero {
+            background-color: var(--color-herolay);
+            background-blend-mode: darken;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url("../images/mobile/studio/heroback.png");
+            @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+                background-image: url("../images/mobile/studio/2x/heroback.png");
+            }
+        }
+        
+        .hero__title {
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--color-antiaccent);
+        }
+        
+        .hero__button {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 1.87;
+            letter-spacing: 0.06em;
+            color: var(--color-antiaccent);
+            background-color: var(--color-accent);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            border-style: none;
+        }
+        
+        .work-grid__title,
+        .photos-grid__title {
+            font-weight: bold;
+            line-height: 1.14;
+            text-transform: uppercase;
+            color: var(--color-headlight);
+        }
+        
+        .photos-grid__title {
+            color: var(--color-antiaccent);
+            background-color: var(--color-photoback);
+        }
+        
+        .work-grid__back {
+            background: var(--color-team);
+            border-radius: 4px;
+        }
+        
+        .super {
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 1.17857143;
+            text-align: center;
+            color: var(--color-headlight);
+        }
+        
+        .team {
+            background-color: var(--color-team);
+        }
+        
+        .team-grid__title {
+            font-weight: 500;
+            color: var(--color-headlight);
+        }
+        
+        .team-grid__title,
+        .team-grid__text {
+            font-size: 16px;
+            line-height: 1.1875;
+            text-align: center;
+        }
+        
+        .team-grid__item {
+            background: var(--color-antiaccent);
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 0px 0px 4px 4px;
+        }
+        
+        .social__icon--team {
+            fill: var(--color-logos);
+        }
+        
+        .clients-grid__link {
+            border: 1px solid var(--color-logos);
+            border-radius: 4px;
+            color: var(--color-logos);
+        }
+        
+        @media (min-width: $tablet) {
+            .hero {
+                background-image: url("../images/tablet/studio/heroback.png");
+                @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+                    background-image: url("../images/tablet/studio/2x/heroback.png");
+                }
+            }
+        }
+        
+        @media (min-width: $desktop) {
+            .hero {
+                background-image: url("../images/desktop/studio/heroback.png");
+                @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+                    background-image: url("../images/desktop/studio/2x/heroback.png");
+                }
+            }
+            .hero__title {
+                font-size: 44px;
+                line-height: 60px;
+            }
+            .super {
+                font-size: 36px;
+                line-height: 42px;
+            }
+        }
+        
+        // modal
+        .modal {
+            background-color: var(--color-modalback);
+        }
+        
+        .window {
+            background-color: var(--color-antiaccent);
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 4px;
+        }
+        
+        .modal__close {
+            background-color: var(--color-antiaccent);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+        }
+        
+        .modal-form__data {
+            border: none;
+        }
+        
+        .modal-form__legend {
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 23px;
+            text-align: center;
+            color: var(--color-headlight);
+        }
+        
+        .modal label {
+            font-size: 12px;
+            line-height: 1.1666666667;
+            letter-spacing: 0.01em;
+        }
+        
+        .modal-form__textbox,
+        .modal-form__commentbox {
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            border-radius: 4px;
+            padding-left: 32px;
+            outline: none;
+        }
+        
+        .modal-form__icon {
+            fill: var(--color-headlight);
+        }
+        
+        .modal-form__commentbox {
+            padding: 12px 16px 12px 16px;
+        }
+        
+        .modal-form__license {
+            font-size: 14px;
+            line-height: 1.71;
+        }
+        
+        .modal-form__license-accent {
+            color: var(--color-accent);
+            text-decoration: underline;
+        }
+        
+        .modal-form__checkbox-icon {
+            background-color: var(--color-antiaccent);
+            --cborder: var(--color-headlight);
+        }
+        
+        .modal-form__submit {
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            background-color: var(--color-accent);
+            color: var(--color-antiaccent);
+            border: none;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 1.87;
+            letter-spacing: 0.06em;
+        }
+        /* Reactions */
+        
+        .social__link:hover .social__icon,
+        .social__link:focus .social__icon {
+            fill: var(--color-antiaccent);
+        }
+        
+        .clients-grid__link:hover .clients-grid__icon,
+        .clients-grid__link:focus .clients-grid__icon {
+            fill: var(--color-accent);
+        }
+        
+        .clients-grid__link:hover,
+        .clients-grid__link:focus {
+            border-color: var(--color-accent);
+            outline: none;
+        }
+        
+        .modal-form__textbox:focus,
+        .modal-form__commentbox:focus {
+            border-color: var(--color-accent);
+        }
+        
+        .modal__close:hover .modal__close-icon,
+        .modal__close:focus .modal__close-icon,
+        .modal-form__textbox:focus+.modal-form__icon {
+            fill: var(--color-accent);
+        }
+        
+        .modal-form__submit:active {
+            background-color: var(--color-button);
+        }
+        
+        .modal-form__checkbox-area:checked+.modal-form__checkbox-icon {
+            --cborder: transparent;
+            --cback: var(--color-accent);
+        }
+        
+        .modal-form__checkbox-area:focus+.modal-form__checkbox-icon {
+            --cborder: var(--color-accent);
+        }

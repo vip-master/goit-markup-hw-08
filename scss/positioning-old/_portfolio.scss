@@ -1,0 +1,44 @@
+.portfolio {
+    padding: 94px 0 94px 0;
+}
+
+.filter {
+    justify-content: center;
+    column-gap: 8px;
+    margin-bottom: 56px;
+}
+
+.cards {
+    column-gap: 30px;
+    row-gap: 30px;
+    flex-wrap: wrap;
+    align-items: initial;
+    justify-content: initial;
+}
+
+.cards__item {
+    width: 370px;
+    height: 404px;
+}
+
+.card__pic {
+    width: 370px;
+    height: 294px;
+    overflow: hidden;
+    object-fit: contain;
+    object-position: center;
+}
+
+.card__pic-text {
+    width: 100%;
+    height: 100%;
+}
+
+.card__textcard {
+    align-items: flex-start;
+    padding: 20px 24px 20px 24px;
+}
+
+.card__text {
+    margin-top: 4px;
+}

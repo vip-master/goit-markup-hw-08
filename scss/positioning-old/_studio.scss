@@ -1,0 +1,71 @@
+.work,
+.photos,
+.team,
+.clients {
+    padding: 94px 0 94px 0;
+}
+
+.work {
+    padding-bottom: 0;
+}
+
+main ul {
+    column-gap: 30px;
+}
+
+.photos-grid__item {
+    position: relative;
+}
+
+.photos-grid__title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    padding: 27px 0 27px 0;
+}
+
+.textcard {
+    align-items: center;
+    padding: 30px 59px 30px 60px;
+}
+
+.team-grid__title {
+    width: max-content;
+}
+
+.team-grid__text {
+    margin-top: 10px;
+}
+
+.social--team {
+    margin-top: 16px;
+}
+
+.clients-grid__back {
+    width: 170px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.clients-grid__item {
+    &:nth-child(1) .clients-grid__icon {
+        width: 44.27px;
+    }
+    &:nth-child(2) .clients-grid__icon {
+        width: 40px;
+    }
+    &:nth-child(3) .clients-grid__icon {
+        width: 41px;
+    }
+    &:nth-child(4) .clients-grid__icon {
+        width: 79.66px;
+    }
+    &:nth-child(5) .clients-grid__icon {
+        width: 59px;
+    }
+    &:nth-child(6) .clients-grid__icon {
+        width: 88.48px;
+    }
+}

@@ -1,0 +1,22 @@
+:root {
+    --color-accent: #2196F3;
+    --color-text: #757575;
+    --color-headlight: #212121;
+    --color-antiaccent: white;
+    --color-line: #ECECEC;
+    --color-footback: #2F303A;
+    --color-antifootback: rgba(255, 255, 255, 0.6);
+    --color-team: #F5F4FA;
+    --color-light-border: #EEEEEE;
+    --color-foottransper: rgba(255, 255, 255, 0.1);
+    --color-logos: #AFB1B8;
+    --color-button: #188CE8;
+    --color-herolay: rgba(47, 48, 58, 0.4);
+    --color-photoback: rgba(47, 48, 58, 0.8);
+    --color-modalback: rgba(0, 0, 0, 0.2);
+}
+
+$min:320px;
+$mobile: 480px;
+$tablet: 767px;
+$desktop: 1200px;

@@ -12,37 +12,65 @@
 </head>
 
 <body>
-    <header class="flex header">
-        <div class="flex centrion header-centrion">
-            <nav class="nav">
-                <a href="./index.html" class="logo header__logo"><span class="logo__accent">Web</span>Studio</a>
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a class="nav__link activated" href="./index.html">Студия</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="./portfolio.html">Портфолио</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="./contacts.html">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <address class="contacts header-contacts">
-                <a class="contact__link" href="mailto:info@devstudio.com">
-                    <svg width="16px" class="contact__icon icon">
-                        <use xlink:href="./images/sprite.svg#mail"></use>
+    <header class="header" menu-modal="">
+        <div class="centrion header-centrion">
+            <a href="./index.html" class="logo header__logo"><span class="logo__accent">Web</span>Studio</a>
+            <div class="modal-nav">
+                <button class="menu-button" menu-modal-close="">
+                    <svg class="menu-button__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 19">
+                        <path class="menu-button__icon"
+                            d="M18.667 1.88L16.787 0 9.333 7.453 1.88 0 0 1.88l7.453 7.453L0 16.787l1.88 1.88 7.453-7.454 7.454 7.454 1.88-1.88-7.454-7.454 7.454-7.453z">
+                        </path>
                     </svg>
-                    info@devstudio.com
-                </a>
+                </button>
+                <nav class="nav">
+                    <ul class="nav__list ">
+                        <li class="nav__item">
+                            <a class="nav__link activated" href="./index.html">Студия</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="./contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="modal-nav__footer ">
+                    <address class="contacts header-contacts">
+                        <a class="contact__link" href="mailto:info@devstudio.com">
+                            <svg class="contact__icon icon">
+                                <use xlink:href="./images/sprite.svg#mail"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
 
-                <a class="contact__link" href="tel:+380961111111">
-                    <svg width="10px" class="contact__icon icon">
-                        <use href="./images/sprite.svg#tel"></use>
-                    </svg>
-                    +38 096 111 11 11
-                </a>
-            </address>
+                        <a class="contact__link" href="tel:+380961111111">
+                            <svg class="contact__icon icon">
+                                <use href="./images/sprite.svg#tel"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
+                    </address>
+                    <ul class="modal-nav__social">
+                        <li class="modal-nav__item"><a href="#" class="modal-nav__link">Instagram</a></li>
+                        <li class="modal-nav__item"><a href="#" class="modal-nav__link">Twitter</a></li>
+                        <li class="modal-nav__item">
+                            <a href="#" class="modal-nav__link">Facebook</a>
+                        </li>
+                        <li class="modal-nav__item">
+                            <a href="#" class="modal-nav__link">Linkedin</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="menu-button" menu-modal-open="">
+                <svg class="menu-button__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 16">
+                    <path class="menu-button__icon" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0 2.667V0h24v2.667H0zm0 6.666h24V6.667H0v2.666zM0 16h24v-2.667H0V16z">
+                    </path>
+                </svg>
+            </button>
         </div>
     </header>
 
@@ -58,7 +86,7 @@
                 <ul class="work-grid">
                     <li class="work-grid__item">
                         <div class="back work-grid__back">
-                            <svg class="work-grid__icon">
+                            <svg class="icon work-grid__icon">
                                 <use href=./images/sprite.svg#antenna></use>
                             </svg>
                         </div>
@@ -67,7 +95,7 @@
                     </li>
                     <li class="work-grid__item">
                         <div class="back work-grid__back">
-                            <svg class="work-grid__icon">
+                            <svg class="icon work-grid__icon">
                                 <use href=./images/sprite.svg#clock></use>
                             </svg>
                         </div>
@@ -76,7 +104,7 @@
                     </li>
                     <li class="work-grid__item">
                         <div class="back work-grid__back">
-                            <svg class="work-grid__icon">
+                            <svg class="icon work-grid__icon">
                                 <use href=./images/sprite.svg#comp></use>
                             </svg>
                         </div>
@@ -85,7 +113,7 @@
                         </p>
                     </li>
                     <li class="work-grid__item">
-                        <div class="back work-grid__back"> <svg class="work-grid__icon">
+                        <div class="back work-grid__back"> <svg class="icon work-grid__icon">
                                 <use href=./images/sprite.svg#astronaut></use>
                             </svg>
                         </div>
@@ -101,17 +129,23 @@
                 <h2 class="photos__title super">Чем мы занимаемся</h2>
                 <ul class="photos-grid">
                     <li class="photos-grid__item">
-                        <img class="photos-grid__photo" src="./images/studio/img1.jpg" alt="Програмирование">
+                        <img class="photos-grid__photo" src="./images/desktop/studio/img1.png" srcset="
+                        ./images/desktop/studio/2x/img1.png 2x
+                        " alt="Програмирование">
                         <h3 class="photos-grid__title"> Десктопные приложения
                     </li>
                     <li class="photos-grid__item">
-                        <img class="photos-grid__photo" src="./images/studio/img2.jpg" alt="Смартфон в руке">
+                        <img class="photos-grid__photo" src="./images/desktop/studio/img2.png" srcset="
+                        ./images/desktop/studio/2x/img2.png 2x
+                        " alt="Смартфон в руке">
                         <h3 class="photos-grid__title">
                             Мобильные приложения
                         </h3>
                     </li>
                     <li class="photos-grid__item">
-                        <img class="photos-grid__photo" src="./images/studio/img3.jpg" alt="Рисование на планшете">
+                        <img class="photos-grid__photo" src="./images/desktop/studio/img3.png" srcset="
+                        ./images/desktop/studio/2x/img3.png 2x
+                        " alt="Рисование на планшете">
                         <h3 class="photos-grid__title">
                             Дизайнерские решения
                         </h3>
@@ -124,7 +158,9 @@
                 <h2 class="team__title super">Наша команда</h2>
                 <ul class="team-grid">
                     <li class="team-grid__item">
-                        <img class="team-grid__photo" src="./images/studio/img7.jpg" alt="Фото сотрудника">
+                        <img class="team-grid__photo team-photo--mobile" src="./images/mobile/studio/img7.png" srcset="./images/mobile/studio/2x/img7.png 2x" alt="Фото сотрудника">
+                        <img class="team-grid__photo team-photo--tablet" src="./images/tablet/studio/img7.png" srcset="./images/tablet/studio/2x/img7.png 2x" alt="Фото сотрудника">
+                        <img class="team-grid__photo team-photo--desktop" src="./images/desktop/studio/img7.png" srcset="./images/desktop/studio/2x/img7.png 2x" alt="Фото сотрудника">
                         <div class="team-grid__text textcard">
                             <h3 class="team-grid__title">Михаил Ермаков</h3>
                             <p class="team-grid__text">UI Designer</p>
@@ -162,7 +198,9 @@
                         </div>
                     </li>
                     <li class="team-grid__item">
-                        <img class="team-grid__photo" src="./images/studio/img7.jpg" alt="Фото сотрудника">
+                        <img class="team-grid__photo team-photo--mobile" src="./images/mobile/studio/img7.png" srcset="./images/mobile/studio/2x/img7.png 2x" alt="Фото сотрудника">
+                        <img class="team-grid__photo team-photo--tablet" src="./images/tablet/studio/img7.png" srcset="./images/tablet/studio/2x/img7.png 2x" alt="Фото сотрудника">
+                        <img class="team-grid__photo team-photo--desktop" src="./images/desktop/studio/img7.png" srcset="./images/desktop/studio/2x/img7.png 2x" alt="Фото сотрудника">
                         <div class="team-grid__text textcard">
                             <h3 class="team-grid__title">Михаил Ермаков</h3>
                             <p class="team-grid__text">UI Designer</p>
@@ -200,7 +238,9 @@
                         </div>
                     </li>
                     <li class="team-grid__item">
-                        <img class="team-grid__photo" src="./images/studio/img7.jpg" alt="Фото сотрудника">
+                        <img class="team-grid__photo team-photo--mobile" src="./images/mobile/studio/img7.png" srcset="./images/mobile/studio/2x/img7.png 2x" alt="Фото сотрудника">
+                        <img class="team-grid__photo team-photo--tablet" src="./images/tablet/studio/img7.png" srcset="./images/tablet/studio/2x/img7.png 2x" alt="Фото сотрудника">
+                        <img class="team-grid__photo team-photo--desktop" src="./images/desktop/studio/img7.png" srcset="./images/desktop/studio/2x/img7.png 2x" alt="Фото сотрудника">
                         <div class="team-grid__text textcard">
                             <h3 class="team-grid__title">Михаил Ермаков</h3>
                             <p class="team-grid__text">UI Designer</p>
@@ -237,9 +277,10 @@
                             </ul>
                         </div>
                     </li>
-
                     <li class="team-grid__item">
-                        <img class="team-grid__photo" src="./images/studio/img7.jpg" alt="Фото сотрудника">
+                        <img class="team-grid__photo team-photo--mobile" src="./images/mobile/studio/img7.png" srcset="./images/mobile/studio/2x/img7.png 2x" alt="Фото сотрудника">
+                        <img class="team-grid__photo team-photo--tablet" src="./images/tablet/studio/img7.png" srcset="./images/tablet/studio/2x/img7.png 2x" alt="Фото сотрудника">
+                        <img class="team-grid__photo team-photo--desktop" src="./images/desktop/studio/img7.png" srcset="./images/desktop/studio/2x/img7.png 2x" alt="Фото сотрудника">
                         <div class="team-grid__text textcard">
                             <h3 class="team-grid__title">Михаил Ермаков</h3>
                             <p class="team-grid__text">UI Designer</p>
@@ -285,58 +326,47 @@
                 <ul class="clients-grid">
                     <li class="clients-grid__item">
                         <a class="clients-grid__link" href="#">
-                            <div class="back clients-grid__back">
-                                <svg class="icon clients-grid__icon">
-                                    <use href="./images/sprite.svg#l1"></use>
-                                </svg>
-                            </div>
+                            <svg class="icon clients-grid__icon">
+                                <use href="./images/sprite.svg#l1"></use>
+                            </svg>
                         </a>
                     </li>
                     <li class="clients-grid__item">
                         <a class="clients-grid__link" href="#">
-                            <div class="back clients-grid__back">
-                                <svg class="icon clients-grid__icon">
-                                    <use href="./images/sprite.svg#l2"></use>
-                                </svg>
-                            </div>
+                            <svg class="icon clients-grid__icon">
+                                <use href="./images/sprite.svg#l2"></use>
+                            </svg>
                         </a>
                     </li>
                     <li class="clients-grid__item">
                         <a class="clients-grid__link" href="#">
-                            <div class="back clients-grid__back">
-                                <svg class="icon clients-grid__icon">
-                                    <use href="./images/sprite.svg#l3"></use>
-                                </svg>
-                            </div>
+                            <svg class="icon clients-grid__icon">
+                                <use href="./images/sprite.svg#l3"></use>
+                            </svg>
                         </a>
                     </li>
                     <li class="clients-grid__item">
                         <a class="clients-grid__link" href="#">
-                            <div class="back clients-grid__back">
-                                <svg class="icon clients-grid__icon">
-                                    <use href="./images/sprite.svg#l4"></use>
-                                </svg>
-                            </div>
+                            <svg class="icon clients-grid__icon">
+                                <use href="./images/sprite.svg#l4"></use>
+                            </svg>
                         </a>
                     </li>
                     <li class="clients-grid__item">
                         <a class="clients-grid__link" href="#">
-                            <div class="back clients-grid__back">
-                                <svg class="icon clients-grid__icon">
-                                    <use href="./images/sprite.svg#l5"></use>
-                                </svg>
-                            </div>
+                            <svg class="icon clients-grid__icon">
+                                <use href="./images/sprite.svg#l5"></use>
+                            </svg>
                         </a>
                     </li>
                     <li class="clients-grid__item">
                         <a class="clients-grid__link" href="#">
-                            <div class="back clients-grid__back">
-                                <svg class="icon clients-grid__icon">
-                                    <use href="./images/sprite.svg#l6"></use>
-                                </svg>
-                            </div>
+                            <svg class="icon clients-grid__icon">
+                                <use href="./images/sprite.svg#l6"></use>
+                            </svg>
                         </a>
                     </li>
+
                 </ul>
             </div>
         </section>
@@ -358,7 +388,7 @@
                         <div class="modal-form__input">
                             <input class="modal-form__textbox" type="text" name="name">
                             <svg class="icon modal-form__icon icon--modal">
-                                <use href="./images/studio/form.svg#name"></use>
+                                <use href="./images/form.svg#name"></use>
                             </svg>
                         </div>
                     </label>
@@ -367,7 +397,7 @@
                         <div class="modal-form__input">
                             <input class="modal-form__textbox" type="text" name="tel">
                             <svg class="icon modal-form__icon icon--modal">
-                                <use href="./images/studio/form.svg#tel"></use>
+                                <use href="./images/form.svg#tel"></use>
                             </svg>
                         </div>
                     </label>
@@ -376,7 +406,7 @@
                         <div class="modal-form__input">
                             <input class="modal-form__textbox" type="text" name="mail">
                             <svg class="icon modal-form__icon icon--modal">
-                                <use href="./images/studio/form.svg#mail"></use>
+                                <use href="./images/form.svg#mail"></use>
                             </svg>
                         </div>
                     </label>
@@ -388,7 +418,7 @@
                     <div class="modal-form__checkbox">
                         <input class="modal-form__checkbox-area" type="checkbox" name="license">
                         <svg class="icon modal-form__checkbox-icon icon--modal">
-                            <use href="./images/studio/form.svg#box"></use>
+                            <use href="./images/form.svg#box"></use>
                         </svg>
                     </div>
                     Соглашаюсь с рассылкой и принимаю <a class="modal-form__license-accent" href="#">Условия
